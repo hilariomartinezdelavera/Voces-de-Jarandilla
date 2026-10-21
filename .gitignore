@@ -1,0 +1,42 @@
+# Capturas de pruebas y verificación visual
+capturas/
+*.capture.png
+pruebas/
+tmp/
+temp/
+/recursos/musica/*.wav
+/recursos/imagenes/referencia canciones.jfif
+/recursos/imagenes/referencia visual.png
+
+# Caches y archivos de sistema
+.cache/
+__pycache__/
+*.pyc
+.thumbs.db
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Herramientas auxiliares de verificación
+*.log
+*.differential.html
+*.report.html
+*.har
+playwright-report/
+test-results/
+.vscode/
+.idea/
+
+# Dependencias (no se usan, por si se añaden)
+node_modules/
+
+# Credenciales y secretos: nunca versionar
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.kdbx
+credentials*
+*secret*
+*password*

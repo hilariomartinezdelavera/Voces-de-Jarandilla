@@ -1,0 +1,59 @@
+.cards{grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:26px}
+.work{min-height:0;border-radius:5px}
+.visual{height:auto;min-height:190px;padding:18px;background:#e9e0d0;display:flex;flex-direction:column;gap:8px}
+.visual:after{display:none}
+.visual img{display:block;width:auto;height:auto;max-width:100%;max-height:290px;object-fit:contain}
+.visual figcaption{font-size:10px;line-height:1.5;color:#5d6c62;text-align:center}
+.work-body{padding:24px 26px 26px}
+.work h3{font-size:27px}
+.work-attribution{font-size:11px;color:#89654c;margin:0 0 15px}
+.read{margin-top:10px}
+.recording{margin-top:18px;padding-top:16px;border-top:1px solid var(--border)}
+.recording-label{display:block;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#68796f;margin-bottom:8px}
+.recording audio,.pending-audio audio{display:block;width:100%;min-width:0}
+.audio-link,.download-link{display:inline-flex;align-items:center;justify-content:center;min-height:40px;margin-top:10px;padding:10px 14px;border:1px solid #163b35;border-radius:3px;background:#163b35;color:#fffaf0;font-size:12px;font-weight:700}
+.audio-link:hover,.download-link:hover{background:#0d2826}
+.unassigned-note{padding:12px 14px;background:#f3e9d9;border-left:3px solid #b74d36;color:#765947;font-size:12px;line-height:1.6}
+.unassigned-note a{color:#163b35;text-decoration:underline;font-weight:700}
+.work .read{width:100%}
+.work .read:focus-visible,.audio-link:focus-visible,.download-link:focus-visible,.copy-btn:focus-visible,.close:focus-visible{outline:3px solid #ddb779;outline-offset:3px}
+.dialog{max-width:820px;max-height:min(92vh,900px);padding:42px clamp(22px,5vw,58px)}
+.dialog h2{font-size:clamp(32px,5vw,43px);line-height:1.15;padding-right:20px}
+.work-art{margin:0 0 24px;padding:14px;background:#eee6d7;text-align:center}
+.work-art img{display:block;width:auto;height:auto;max-width:100%;max-height:300px;object-fit:contain;margin:auto}
+.work-art figcaption{font-size:10px;color:#68796f;line-height:1.5;margin-top:9px}
+.work-description{font-size:13px;line-height:1.7;color:#68796f;margin:12px 0}
+.meta{line-height:1.7}
+.poem{font-size:clamp(17px,2.3vw,20px);line-height:1.95;margin-top:22px}
+.audio-box{line-height:1.6}
+.audio-box audio{display:block}
+.audio-box[hidden]{display:none}
+.notice{white-space:pre-line}
+.copy-btn{border-radius:3px;font-weight:700;min-height:42px}
+.copy-status{display:inline-block;margin:15px 0 0 12px;color:#526b5d;font-size:12px}
+.copy-status[data-error=true]{color:#a23f2f}
+.identity-note{margin-top:22px;padding:15px 18px;background:#f7f2e7;border-left:2px solid var(--gold);font-size:12px!important;line-height:1.7!important}
+.identity-note:before{content:'REFERENCIAS DE LA VERA';display:block;margin-bottom:5px;color:#a64b36;font-size:9px;font-weight:700;letter-spacing:1.5px}
+.pending-section{padding:58px 0;background:#e8dfcd}
+.pending-section h2{font:500 clamp(27px,3.5vw,37px)/1.2 'Playfair Display',Georgia,serif;margin:9px 0}
+.pending-section p{max-width:700px;color:#5d6c62;font-size:13px;line-height:1.8}
+.pending-audio{max-width:620px;margin-top:24px;padding:22px;background:#fffaf2;border:1px solid var(--border)}
+.pending-audio h3{font:500 21px/1.3 'Playfair Display',Georgia,serif;margin:0 0 10px}
+.pending-audio .recording-label{margin-bottom:10px}
+.pending-audio .download-link{margin-bottom:2px}
+@media(max-width:850px){
+  .section{padding:65px 0}
+  .cards{grid-template-columns:1fr}
+  .visual{min-height:160px}
+  .visual img{max-height:270px}
+  .dialog{max-height:calc(100dvh - 20px);padding:38px 22px 28px}
+  .work-art img{max-height:240px}
+  .poem{font-size:18px;line-height:1.85}
+}
+@media(max-width:480px){
+  .filters{align-items:stretch}
+  .search{margin-left:0;width:100%;flex-basis:100%}
+  .filter{padding:9px 12px}
+  .work-body{padding:21px}
+  .copy-status{display:block;margin:10px 0 0}
+}
