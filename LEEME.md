@@ -31,6 +31,6 @@ La web utiliza `fondo.png`, `virgen.png`, `cristo.png`, `altar.png`, `Ermita.png
 - Recibir los datos bibliográficos y las portadas verificables de los tres libros.
 - Verificar el título y la autoría del vídeo enlazado.
 - Incorporar fotografía y datos biográficos contrastados del autor.
-- Confirmar los permisos de publicación de textos, grabaciones e ilustraciones.
+- Conservar constancia de las autorizaciones de publicación de textos, grabaciones, retrato, ilustraciones y portadas.
 
-El WAV del romance es PCM estéreo de 44,1 kHz y se conserva localmente. La web enlaza a una versión MP3 de 192 kbit/s para no depender de ese archivo grande. Los permisos de publicación de textos, grabaciones, retrato, ilustraciones y portadas siguen pendientes de confirmación; no se incluye una licencia general de reutilización.
+El WAV del romance es PCM estéreo de 44,1 kHz y se conserva localmente. La web enlaza a una versión MP3 de 192 kbit/s para no depender de ese archivo grande. La persona responsable del archivo confirmó las autorizaciones necesarias para publicar los materiales incluidos; no se incluye una licencia general de reutilización.
