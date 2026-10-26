@@ -25,10 +25,10 @@
   };
   const recordings = [{
     id: 'romance-estripaterrones',
-    title: 'Romance del estripaterrones verato',
+    title: 'Romance al campesino estripaterrones de la Vera y su dulce compañera',
     type: 'Romance musical',
     audio: `${musicPath}Romance  del Estripaterrones Verato.mp3`,
-    audioTitle: 'Romance del Estripaterrones Verato',
+    audioTitle: 'Romance al campesino estripaterrones de la Vera y su dulce compañera',
     format: 'Versión MP3 · WAV original conservado localmente',
     attribution: 'Datos de procedencia, pendientes de documentación.',
     text: null
