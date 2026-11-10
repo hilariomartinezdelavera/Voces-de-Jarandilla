@@ -68,7 +68,7 @@
 
   for (const work of obras) {
     if (work.id === 'rogativa') {
-      work.titulo = 'El milagro de la lluvia, Rogativa a Santo Cristo de la Caridad de Jarandilla';
+      work.titulo = 'El milagro de la lluvia, Rogativa al Santo Cristo de la Caridad de Jarandilla';
     }
     const media = audioWorks[work.id];
     if (media) Object.assign(work, media);
