@@ -314,6 +314,30 @@
   font-size:12px!important;
 }
 
+.work-history{
+  max-width:680px;
+  margin:0 auto;
+  padding:12px 16px;
+  border-left:3px solid #b74d36;
+  background:#f3e9d9;
+  color:#5d6c62;
+  text-align:left;
+}
+
+.work-history h4{
+  margin:0 0 5px;
+  color:#8d503b;
+  font-size:11px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+
+.work-history p{
+  margin:0;
+  font-size:12px;
+  line-height:1.6;
+}
+
 .lyrics{
   margin:25px 0;
   color:#2e4036;
@@ -1540,6 +1564,7 @@
     "type type type"
     "title title title"
     "attribution attribution attribution"
+    "history history history"
     "lyrics lyrics lyrics"
     "recording-label recording-label recording-label"
     "player download copy"
@@ -1567,6 +1592,19 @@
   font-size:24px!important;
   line-height:1.35!important;
   color:#e8c58f!important;
+}
+
+#canciones .work-history{
+  grid-area:history;
+  width:100%;
+  max-width:680px;
+  background:rgba(255,255,255,.1);
+  border-left-color:#e8c58f;
+  color:#f5ebdd;
+}
+
+#canciones .work-history h4{
+  color:#e8c58f;
 }
 
 #canciones .song-lyrics{
@@ -1658,6 +1696,7 @@
       "type type"
       "title title"
       "attribution attribution"
+      "history history"
       "lyrics lyrics"
       "recording-label recording-label"
       "player player"
@@ -1733,4 +1772,27 @@
     font-size:42px;
     line-height:1.4;
   }
+}
+
+#canciones .work-history{
+  padding:20px 22px;
+  border-left:4px solid #ddb779;
+  border-radius:4px;
+  background:#f7f2e7;
+  color:#273830;
+  box-shadow:0 8px 24px rgba(0,0,0,.24);
+  text-align:left;
+}
+
+#canciones .work-history h4{
+  margin-bottom:10px;
+  color:#713c2c;
+  font-size:13px;
+  text-transform:none;
+}
+
+#canciones .work-history p{
+  color:#273830;
+  font-size:clamp(14px,1.15vw,16px);
+  line-height:1.75;
 }

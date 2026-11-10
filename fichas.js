@@ -10,7 +10,8 @@
       imageCaption: 'Virgen · Recreación artística',
       contextImage: `${imagePath}Ermita.png`,
       contextImageAlt: 'Representación artística de la ermita de Sopetrán',
-      contextImageCaption: 'Ermita de Sopetrán · Recreación artística'
+      contextImageCaption: 'Ermita de Sopetrán · Recreación artística',
+      history: 'Este canto, hoy, en el otoño de 2026, está en desuso y prácticamente olvidado. La primera vez que un servidor tuvo noticias de él fue a principios de los años sesenta del siglo XX. Este menda-lerenda tenía entonces diez años y, como no podía ser de otra manera, fue mi abuela materna, quien me enseño dicho canto, mi abuela se llamaba Librada Cañadas Ruiz, nacida en Jarandilla en julio de 1883 y fallecida en agosto de 1983,y un servidor tuvo la suerte de convivir con ella  durante muchos  años y en ese tiempo, me cantó muchas veces esta canción. Poco a poco, se me fue grabando en el corazón y en la memoria. Y dicha canto lo publiqué por primera vez en 1992, en la revista-programa de las fiestas del Cristo de Jarandilla. Hoy, otoño de 2026, vuelvo a publicarla cantada con su tono original, para que quede en la historia de Jarandilla. Narrada por Hilario, poeta jarandillano del siglo XXI.'
     },
     rogativa: {
       audio: `${musicPath}Canto al cristo de la Caridad.mp3`,
@@ -107,12 +108,16 @@
     const title = work.titulo;
     const artwork = renderArtwork(work.image, work.imageAlt, work.imageCaption);
     const context = renderArtwork(work.contextImage, work.contextImageAlt, work.contextImageCaption, 'context-art');
+    const history = work.history
+      ? `<aside class="work-history"><h4>Breve historia</h4><p>${escapeHtml(work.history)}</p></aside>`
+      : '';
     return `<article class="work song-work" id="${escapeHtml(work.id)}">
       <div class="song-visual">${artwork}${context}</div>
       <div class="work-body">
         <div class="work-type">Canción tradicional</div>
         <h3>${escapeHtml(title)}</h3>
         <p class="work-attribution">${escapeHtml(work.autor)}</p>
+        ${history}
         <div class="lyrics song-lyrics" lang="es">${renderLyrics(work.texto)}</div>
         ${renderPlayer(work.audio, work.audioTitle)}
         <button class="copy-btn" type="button" data-copy="${escapeHtml(work.id)}">Copiar letra</button>
