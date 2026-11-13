@@ -21,7 +21,8 @@
       imageCaption: 'Cristo · Recreación artística',
       contextImage: `${imagePath}altar.png`,
       contextImageAlt: 'Representación artística de un altar religioso',
-      contextImageCaption: 'Altar · Recreación artística'
+      contextImageCaption: 'Altar · Recreación artística',
+      history: 'Como no podía ser de otra forma, esta rogativa al Santísimo Cristo, al igual que el canto a la Santísima Virgen de Sopetrán, me la cantó muchas veces mi abuela durante los años en que tuve la suerte de convivir con ella, en las décadas de 1960 y 1970. Como ya relato en mi libro Lazos de Historia y Poesía, el milagro tuvo lugar en Jarandilla de la Vera el 8 de abril de 1817. Ese día, por primera vez, el pueblo de Jarandilla sacó en procesión la sagrada imagen del Cristo Crucificado desde su ermita del Humilladero, situada en la avenida del Santo Cristo, s/n, hasta la parroquia de Santa María de la Torre, en la plaza de la Constitución (antigua fortaleza templaria). Durante la procesión le cantaron estos versos. Hoy, en el otoño de 2026, están en desuso y casi olvidados, pero gracias a la técnica y a los medios actuales podéis escucharlos en su canto original.'
     }
   };
   const recordings = [{
